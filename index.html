@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Little • Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap');
+
+        :root {
+            --bg: #0a0a0a;
+            --text: #f5f5f5;
+            --accent: #3b82f6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', system-ui, sans-serif;
+            font-size: 5.5rem;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            color: #888;
+            margin: 0 0 80px 0;
+            font-weight: 400;
+        }
+
+        .contact-section {
+            margin: 60px 0;
+        }
+
+        .label {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .email {
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .email:hover {
+            color: #60a5fa;
+            transform: translateY(-2px);
+        }
+
+        .tools-section {
+            margin: 80px 0 40px 0;
+        }
+
+        .tools-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .tool-link {
+            font-size: 1.4rem;
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            padding-bottom: 4px;
+        }
+
+        .tool-link:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 100px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paul Little</h1>
+        <p class="subtitle">Portfolio & Contact</p>
+
+        <div class="contact-section">
+            <div class="label">Email</div>
+            <a href="mailto:avaviel@gmail.com" class="email">avaviel@gmail.com</a>
+        </div>
+
+        <div class="tools-section">
+            <div class="label">Keyboard Tools</div>
+            <div class="tools-links">
+                <a href="https://yakb.avaviel.com" class="tool-link" target="_blank">Plate Generator</a>
+                <a href="https://kle.avaviel.com" class="tool-link" target="_blank">Layout Editor</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2026 • Available for freelance & collaboration
+        </div>
+    </div>
+</body>
+</html>
