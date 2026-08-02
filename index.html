@@ -78,10 +78,17 @@
 
         .tools-links {
             display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
             margin-top: 20px;
+        }
+
+        .tool-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
         }
 
         .tool-link {
@@ -96,6 +103,22 @@
         .tool-link:hover {
             color: var(--accent);
             border-bottom-color: var(--accent);
+        }
+
+        .tool-note {
+            font-size: 0.85rem;
+            color: #666;
+            max-width: 400px;
+            line-height: 1.4;
+        }
+
+        .tool-note a {
+            color: #888;
+            text-decoration: underline;
+        }
+
+        .tool-note a:hover {
+            color: #aaa;
         }
 
         .footer {
@@ -118,8 +141,18 @@
         <div class="tools-section">
             <div class="label">Keyboard Tools</div>
             <div class="tools-links">
-                <a href="https://yakb.avaviel.com" class="tool-link" target="_blank">Plate Generator</a>
-                <a href="https://kle.avaviel.com" class="tool-link" target="_blank">Layout Editor</a>
+                <div class="tool-item">
+                    <a href="https://yakb.avaviel.com" class="tool-link" target="_blank">Plate Generator</a>
+                    <div class="tool-note">
+                        Self-hosted instance of the <a href="YOUR_GITHUB_LINK_HERE" target="_blank">open-source Plate Generator</a>. Provided under the original author's license.
+                    </div>
+                </div>
+                <div class="tool-item">
+                    <a href="https://kle.avaviel.com" class="tool-link" target="_blank">Layout Editor</a>
+                    <div class="tool-note">
+                        Self-hosted instance of <a href="YOUR_GITHUB_LINK_HERE" target="_blank">Keyboard Layout Editor</a>. Original copyright reserved to respective authors.
+                    </div>
+                </div>
             </div>
         </div>
 
