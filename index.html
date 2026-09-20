@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="impact-site-verification" content="cab1633f-2575-402f-9957-56bec2fa3566">
     <title>Paul Little • Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap');
@@ -42,9 +41,15 @@
             margin: 0 0 80px 0;
             font-weight: 400;
         }
-        .contact-section,
-        .links-section {
+        .contact-section {
             margin: 60px 0;
+        }
+        .links-section {
+            margin: 60px 0 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
         }
         .label {
             font-size: 1.1rem;
@@ -53,41 +58,36 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-        .email,
-        .body-link {
+        .email {
             font-size: 2.8rem;
             font-weight: 600;
             color: var(--accent);
             text-decoration: none;
             transition: all 0.2s ease;
-            word-break: break-all;
         }
-        .email:hover,
-        .body-link:hover {
+        .email:hover {
             color: #60a5fa;
-            transform: translateY(-2px);
         }
-        .hub-link {
-            display: inline-block;
-            font-size: 1.4rem;
-            color: var(--text);
+        .small-link {
+            font-size: 1.1rem;
+            color: #888;
             text-decoration: none;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 4px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
             transition: all 0.2s ease;
         }
-        .hub-link:hover {
+        .small-link:hover {
             color: var(--accent);
             border-bottom-color: var(--accent);
         }
         .affiliate-note {
-            margin-top: 24px;
+            margin-top: 8px;
             font-size: 0.85rem;
             color: #666;
             line-height: 1.5;
             max-width: 480px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .footer {
             margin-top: 100px;
@@ -107,16 +107,9 @@
         </div>
 
         <div class="links-section">
-            <div class="label">YouTube</div>
-            <a href="https://youtube.com/@avaviel" class="body-link" target="_blank" rel="noopener">youtube.com/@avaviel</a>
-        </div>
-
-        <div class="links-section">
-            <div class="label">Yao Guang Power Bank</div>
-            <a href="https://go.avaviel.com/yaoguang" class="body-link">https://go.avaviel.com/yaoguang</a>
-            <p style="margin: 28px 0 12px 0;">
-                <a href="https://go.avaviel.com/hsr" class="hub-link">Star Rail hub: https://go.avaviel.com/hsr</a>
-            </p>
+            <a href="https://youtube.com/@avaviel" class="small-link" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://go.avaviel.com/yaoguang" class="small-link">Power Bank</a>
+            <a href="https://go.avaviel.com/hsr" class="small-link">Star Rail Hub</a>
             <p class="affiliate-note">
                 (Affiliate Links)<br>
                 *Note: I receive a small commission from purchases made through this link at no extra cost to you.
