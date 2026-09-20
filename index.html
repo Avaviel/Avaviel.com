@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="impact-site-verification" content="cab1633f-2575-402f-9957-56bec2fa3566">
     <title>Paul Little • Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap');
-
         :root {
             --bg: #0a0a0a;
             --text: #f5f5f5;
             --accent: #3b82f6;
         }
-
         body {
             margin: 0;
             padding: 0;
@@ -25,12 +24,10 @@
             min-height: 100vh;
             text-align: center;
         }
-
         .container {
             max-width: 700px;
             padding: 40px 20px;
         }
-
         h1 {
             font-family: 'Space Grotesk', system-ui, sans-serif;
             font-size: 5.5rem;
@@ -39,18 +36,16 @@
             letter-spacing: -3px;
             line-height: 1;
         }
-
         .subtitle {
             font-size: 1.8rem;
             color: #888;
             margin: 0 0 80px 0;
             font-weight: 400;
         }
-
-        .contact-section {
+        .contact-section,
+        .links-section {
             margin: 60px 0;
         }
-
         .label {
             font-size: 1.1rem;
             color: #777;
@@ -58,69 +53,42 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-
-        .email {
+        .email,
+        .body-link {
             font-size: 2.8rem;
             font-weight: 600;
             color: var(--accent);
             text-decoration: none;
             transition: all 0.2s ease;
+            word-break: break-all;
         }
-
-        .email:hover {
+        .email:hover,
+        .body-link:hover {
             color: #60a5fa;
             transform: translateY(-2px);
         }
-
-        .tools-section {
-            margin: 80px 0 40px 0;
-        }
-
-        .tools-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .tool-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .tool-link {
+        .hub-link {
+            display: inline-block;
             font-size: 1.4rem;
             color: var(--text);
             text-decoration: none;
             border-bottom: 2px solid transparent;
-            transition: all 0.2s ease;
             padding-bottom: 4px;
+            transition: all 0.2s ease;
         }
-
-        .tool-link:hover {
+        .hub-link:hover {
             color: var(--accent);
             border-bottom-color: var(--accent);
         }
-
-        .tool-note {
+        .affiliate-note {
+            margin-top: 24px;
             font-size: 0.85rem;
             color: #666;
-            max-width: 400px;
-            line-height: 1.4;
+            line-height: 1.5;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .tool-note a {
-            color: #888;
-            text-decoration: underline;
-        }
-
-        .tool-note a:hover {
-            color: #aaa;
-        }
-
         .footer {
             margin-top: 100px;
             font-size: 0.95rem;
@@ -138,22 +106,21 @@
             <a href="mailto:avaviel@gmail.com" class="email">avaviel@gmail.com</a>
         </div>
 
-        <div class="tools-section">
-            <div class="label">Keyboard Tools</div>
-            <div class="tools-links">
-                <div class="tool-item">
-                    <a href="https://yakb.avaviel.com" class="tool-link" target="_blank">Plate Generator</a>
-                    <div class="tool-note">
-                        Self-hosted instance of the <a href="YOUR_GITHUB_LINK_HERE" target="_blank">open-source Plate Generator</a>. Provided under the original author's license.
-                    </div>
-                </div>
-                <div class="tool-item">
-                    <a href="https://kle.avaviel.com" class="tool-link" target="_blank">Layout Editor</a>
-                    <div class="tool-note">
-                        Self-hosted instance of <a href="YOUR_GITHUB_LINK_HERE" target="_blank">Keyboard Layout Editor</a>. Original copyright reserved to respective authors.
-                    </div>
-                </div>
-            </div>
+        <div class="links-section">
+            <div class="label">YouTube</div>
+            <a href="https://youtube.com/@avaviel" class="body-link" target="_blank" rel="noopener">youtube.com/@avaviel</a>
+        </div>
+
+        <div class="links-section">
+            <div class="label">Yao Guang Power Bank</div>
+            <a href="https://go.avaviel.com/yaoguang" class="body-link">https://go.avaviel.com/yaoguang</a>
+            <p style="margin: 28px 0 12px 0;">
+                <a href="https://go.avaviel.com/hsr" class="hub-link">Star Rail hub: https://go.avaviel.com/hsr</a>
+            </p>
+            <p class="affiliate-note">
+                (Affiliate Links)<br>
+                *Note: I receive a small commission from purchases made through this link at no extra cost to you.
+            </p>
         </div>
 
         <div class="footer">
